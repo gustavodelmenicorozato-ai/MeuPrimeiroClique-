@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como usar o celular</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-servicos">
+
+    <!-- TOPO -->
+    <header class="topo-pagina">
+
+        <!-- BOTÃO VOLTAR -->
+        <a href="menu.html" class="btn-voltar">
+            <img src="img/img-seta-voltar.png" alt="Voltar">
+        </a>
+
+        <h1 class="titulo-pagina">
+            Como usar o celular
+        </h1>
+
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main class="conteudo-servicos">
+
+        <div class="botao-servico azul"
+            onclick="window.location.href='fotos.html'">
+            Como tirar fotos
+        </div>
+
+        <div class="botao-servico vermelho"
+            onclick="window.location.href='apps.html'">
+            Como instalar aplicativos
+        </div>
+
+        <div class="botao-servico laranja"
+            onclick="window.location.href='mensagens.html'">
+            Como enviar mensagens e fazer ligações
+        </div>
+
+    </main>
+
+    <!-- CORUJINHA -->
+    <div class="coruja-container">
+        <img src="img/img-celular.png" alt="Corujinha">
+    </div>
+
+    <!-- ÁUDIO DA PÁGINA -->
+    <audio id="audioCelular">
+        <source src="audio/como-usar-o-celular.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <!-- BOTÃO DE OUVIR INSTRUÇÕES -->
+    <button class="botao-audio"
+        style="left: 20px; right: auto;"
+        onclick="tocarAudioCelular()">
+        Ouvir instruções
+    </button>
+
+    <!-- SCRIPT -->
+    <script>
+        function tocarAudioCelular() {
+            const audio = document.getElementById("audioCelular");
+
+            audio.pause();
+            audio.currentTime = 0;
+            audio.play();
+        }
+    </script>
+
+</body>
+
+</html>

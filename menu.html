@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Inclusão Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <a href="index.html" class="btn-voltar">
+        <img src="img/img-seta-voltar.png" alt="Voltar">
+    </a>
+
+    <section id="menu">
+
+        <h1 class="titulo-menu">Inclusão Digital para Todos</h1>
+
+        <div class="menu-grid">
+
+            <!-- SERVIÇOS PÚBLICOS -->
+            <div class="menu-card servicos"
+                onclick="window.location.href='servicos.html'">
+
+                <div class="icone">
+                    <img src="img/icone-servicos-publicos.png" alt="Serviços Públicos">
+                </div>
+
+                <div class="texto-card">
+                    Serviços Públicos
+                </div>
+
+            </div>
+
+            <!-- CELULAR -->
+            <div class="menu-card celular"
+                onclick="window.location.href='celular.html'">
+
+                <div class="icone">
+                    <img src="img/icone-como-mexer-no-celular.png" alt="Celular">
+                </div>
+
+                <div class="texto-card">
+                    Como usar o celular
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- ÁUDIO -->
+<audio id="audioMenu">
+    <source src="audio/menu-digui.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+</audio>
+
+<button class="botao-audio" onclick="tocarAudio()">
+    Ouvir instruções
+</button>
+
+<script>
+    function tocarAudio() {
+        const audio = document.getElementById("audioMenu");
+
+        audio.pause();
+        audio.currentTime = 0;
+
+        audio.play().catch((erro) => {
+            console.log("Erro ao tocar o áudio:", erro);
+            alert("Não foi possível tocar o áudio.");
+        });
+    }
+</script>

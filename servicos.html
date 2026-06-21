@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços Públicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-servicos">
+
+    <!-- TOPO DA PÁGINA -->
+    <header class="topo-pagina">
+        <a href="menu.html" class="btn-voltar">
+            <img src="img/img-seta-voltar.png" alt="Voltar">
+        </a>
+
+        <h1 class="titulo-pagina">Serviços Públicos</h1>
+    </header>
+
+    <!-- BOTÕES -->
+    <main class="conteudo-servicos">
+
+        <div class="botao-servico azul"
+            onclick="window.location.href='acessar-gov.html'">
+            Como acessar o gov.br
+        </div>
+
+        <div class="botao-servico vermelho"
+            onclick="window.location.href='navegar-gov.html'">
+            Como navegar pelo gov.br
+        </div>
+
+        <div class="botao-servico laranja"
+            onclick="window.location.href='documentos.html'">
+            Como emitir documentos
+        </div>
+
+    </main>
+
+    <!-- CORUJINHA -->
+    <div class="coruja-container">
+        <img src="img/img-servicos-coruja.png" alt="Corujinha">
+    </div>
+
+    <!-- ÁUDIO DA PÁGINA -->
+    <audio id="audioServicos">
+        <source src="audio/servicos-digui.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <!-- BOTÃO DE OUVIR INSTRUÇÕES -->
+    <button class="botao-audio"
+        style="left: 20px; right: auto;"
+        onclick="tocarAudioServicos()">
+        Ouvir instruções
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

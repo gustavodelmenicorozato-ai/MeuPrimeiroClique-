@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Clique</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="inicio">
+
+        <div class="conteudo">
+
+            <h1>MEU PRIMEIRO CLIQUE</h1>
+
+            <p>
+                Conecte-se ao mundo digital de forma simples e acessível.
+            </p>
+
+            <div class="area-principal">
+
+                <!-- CORUJINHA SEM ÁUDIO -->
+                <img src="img/coruja.png" alt="Corujinha Digi" class="coruja">
+
+                <button id="btnVamos" onclick="window.location.href='menu.html'">
+                    VAMOS LÁ
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ÁUDIO DA PÁGINA INICIAL -->
+    <audio id="audioIntroducao">
+        <source src="audio/digui.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <!-- BOTÃO PARA OUVIR DE NOVO -->
+    <button class="botao-audio" onclick="tocarIntroducao(event)">
+        Ouvir instruções
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
